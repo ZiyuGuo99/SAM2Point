@@ -15,6 +15,10 @@ We introduce **SAM2Point**, a preliminary exploration adapting Segment Anything 
     <img src="figs/fig1.png" width="90%"> <br>
 </p>
 
+To our best knowledge, SAM2POINT presents ***the most faithful implementation of SAM in 3D***, demonstrating superior implementation efficiency, promptable flexibility, and generalization capabilities for 3D segmentation.
+<p align="center">
+    <img src="figs/fig2.png" width="90%"> <br>
+</p>
 
 ## :white_check_mark: Citation
 
