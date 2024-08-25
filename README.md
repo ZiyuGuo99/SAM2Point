@@ -20,6 +20,9 @@ To our best knowledge, SAM2POINT presents ***the most faithful implementation of
     <img src="figs/fig2.png" width="90%"> <br>
 </p>
 
+## 💪 Get Started
+
+
 ## :white_check_mark: Citation
 
 If you find **SAM2Point** useful for your research and applications, please kindly cite using this BibTeX:
