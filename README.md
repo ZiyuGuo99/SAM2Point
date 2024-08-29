@@ -2,10 +2,10 @@
 
 Official repository for the paper "[SAM2Point: Segment Any 3D as Videos in Zero-shot and Promptable Manners](https://arxiv.org/pdf/2403.14624.pdf)".
 
-[[🌐 Webpage](https://mathverse-cuhk.github.io/)] [[🤗 Online Demo](https://huggingface.co/datasets/AI4Math/MathVerse)] [[📖 Paper](https://arxiv.org/pdf/2403.14624.pdf)]
+[[🤗 Online Demo](https://huggingface.co/spaces/ZiyuG/SAM2Point)] [[📖 Paper]([https://arxiv.org/pdf/2403.14624.pdf](https://huggingface.co/spaces/ZiyuG/SAM2Point))]
 
 ## 💥 News
-- **[2024.08.25]** We release the [paper](), [demo](), and [code]() of SAM2Point 🚀
+- **[2024.08.30]** We release the [paper](), [demo](https://huggingface.co/spaces/ZiyuG/SAM2Point), and [code](https://github.com/ZiyuGuo99/SAM2Point) of SAM2Point 🚀
 
 ## 👀 About SAM2Point
 
