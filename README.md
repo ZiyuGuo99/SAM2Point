@@ -1,6 +1,6 @@
 # SAM2Point 🔥: Segment Any 3D as Videos
 
-Official repository for the paper "[SAM2Point: Segment Any 3D as Videos in Zero-shot and Promptable Manners](https://arxiv.org/pdf/2403.14624.pdf)".
+Official repository for the paper "[SAM2Point: Segment Any 3D as Videos in Zero-shot and Promptable Manners](https://github.com/ZiyuGuo99/SAM2Point/blob/main/SAM2Point.pdf)".
 
 [[🤗 Online Demo](https://huggingface.co/spaces/ZiyuG/SAM2Point)] [[📖 Paper](https://github.com/ZiyuGuo99/SAM2Point/blob/main/SAM2Point.pdf)]
 
