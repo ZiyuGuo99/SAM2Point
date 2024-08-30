@@ -77,10 +77,6 @@ class Voxelizer:
         inds, inds_reconstruct = sparse_quantize(coords_aug, return_index=True) #NOTE
         coords_aug, feats, labels = coords_aug[inds], feats[inds], labels[inds] #NOTE
 
-        # #NOTE:
-        # inds, inds_reconstruct, feats = sparse_quantize(coords_aug, feats=feats, return_index=True)
-        # coords_aug, labels = coords_aug[inds], labels[inds]
-
         if return_ind:
             return coords_aug, feats, labels, np.array(inds_reconstruct), inds
         if link is not None:
