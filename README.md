@@ -22,6 +22,8 @@ To our best knowledge, SAM2POINT presents ***the most faithful implementation of
 
 ## 💪 Get Started
 
+The code has been released.
+The instructions are coming soon.
 
 ## :white_check_mark: Citation
 
