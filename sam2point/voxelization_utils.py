@@ -128,19 +128,6 @@ def sparse_quantize(coords,
             return discrete_coords[inds], feats[inds], filtered_labels
     else:
         _, inds, inds_reverse = np.unique(key, return_index=True, return_inverse=True)
-        # NOTE:
-        if use_feat:
-            voxel_feats = np.zeros((len(np.unique(key)), feats.shape[1]), dtype=feats.dtype)
-            for i in range(len(np.unique(key))):
-            #     voxel_feats[i] = np.mean(feats[inds_reverse == i], axis=0)
-            #     voxel_feats[i] = np.median(feats[inds_reverse == i], axis=0)
-                voxel_center = np.mean(coords[inds_reverse == i], axis=0)
-                distances = np.linalg.norm(coords[inds_reverse == i] - voxel_center, axis=1)
-                central_point_idx = np.argmin(distances)
-                voxel_feats[i] = feats[inds_reverse == i][central_point_idx]
-            if return_index:
-                return inds, inds_reverse, voxel_feats
-        ##############
         if return_index:
             return inds, inds_reverse
         else:
