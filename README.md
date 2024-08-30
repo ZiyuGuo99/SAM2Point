@@ -5,7 +5,7 @@ Official repository for the project "[SAM2Point: Segment Any 3D as Videos in Zer
 [[🌐 Webpage](https://sam2point.github.io/)] [[🤗 HF Demo](https://huggingface.co/spaces/ZiyuG/SAM2Point)] [[📖 Paper](https://arxiv.org/pdf/2408.16768)] 
 
 ## 💥 News
-- **[2024.08.30]** We release the [paper](https://github.com/ZiyuGuo99/SAM2Point/blob/main/SAM2Point.pdf), [demo](https://huggingface.co/spaces/ZiyuG/SAM2Point), and [code](https://github.com/ZiyuGuo99/SAM2Point) of SAM2Point 🚀
+- **[2024.08.30]** We release the [paper](https://arxiv.org/pdf/2408.16768), [demo](https://huggingface.co/spaces/ZiyuG/SAM2Point), and [code](https://github.com/ZiyuGuo99/SAM2Point) of SAM2Point 🚀
 
 ## 👀 About SAM2Point
 
