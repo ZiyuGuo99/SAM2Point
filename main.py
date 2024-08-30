@@ -27,18 +27,8 @@ def main():
     parser.add_argument('--voxel_size', type=float, default=0.02, help='voxel size')    
     parser.add_argument('--theta', type=float, default=0.) 
     parser.add_argument('--mode', type=str, default='bilinear')  
-    
     args = parser.parse_args()
-    name_list = [args.dataset, "sample" + str(args.sample_idx), args.prompt_type + "-prompt" + str(args.prompt_idx)]
-    name = '_'.join(name_list)
-
-    result_name = "cache_results/" + name + '.npy'
-    prompt_name = "cache_prompt/" + name + '.npy'
-
-    if os.path.exists("./cache_results/" + name + '.npy') and os.path.exists("./cache_prompt/" + name + '.npy'):
-        new_color = np.load("./cache_results/" + name + '.npy') ###
-        PROMPT = np.load("./cache_prompt/" + name + '.npy') ###
-
+    
     if args.dataset == 'S3DIS':
         info = configs.S3DIS_samples[args.sample_idx]
         point, color = dataset.load_S3DIS_sample(info['path'])
@@ -116,5 +106,3 @@ def main():
 
 if __name__=='__main__':
     main()
-    
-
