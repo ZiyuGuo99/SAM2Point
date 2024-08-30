@@ -1,0 +1,1 @@
+from sam2.csrc.connected_comp import connect
