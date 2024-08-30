@@ -1,0 +1,9 @@
+plotly
+open3d
+opencv-python
+hydra-core
+numpy
+torch
+Pillow
+torchvision
+gradio
