@@ -21,9 +21,98 @@ To our best knowledge, SAM2POINT presents ***the most faithful implementation of
 </p>
 
 ## 💪 Get Started
+### Installation
 
-The code has been released.
-The instructions are coming soon.
+Clone the repository:
+
+   ```bash
+   git clone https://github.com/ZiyuGuo99/SAM2Point.git
+   cd SAM2Point
+   ```
+
+Create a conda environment:
+
+   ```bash
+   conda create -n sam2point python=3.10
+   conda activate sam2point
+   ```
+   SAM2Point requires Python >= 3.10, PyTorch >= 2.3.1, and TorchVision >= 0.18.1. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch and TorchVision dependencies.
+
+   Install additional dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Prepare SAM 2 and 3D Data Samples
+
+   Download the checkpoint of SAM 2:
+
+   ```bash
+   cd checkpoints
+   ./download_ckpts.sh
+   cd ..
+   ```
+
+We provide 3D data samples from different datasets for testing SAM2Point:
+   ```bash
+   gdown --id 1hIyjBCd2lsLnP_GYw-AMkxJnvNtyxBYq
+   unzip data.zip
+   ```
+
+   Alternatively, you can download the samples directly from [this link](https://drive.google.com/file/d/1hIyjBCd2lsLnP_GYw-AMkxJnvNtyxBYq/view?usp=sharing).
+   
+***Code for custom 3D input and prompts will be released soon.***
+
+### Start Segmentation
+Modify `DATASET`, `SAMPLE_IDX`, `PROPMT_TYPE`, `PROMPT_IDX` in `run.sh` to specify the 3D input and prompt, and run the segmentation script:
+   ```bash
+   bash run.sh
+   ```
+
+   The segmentation results will be saved under `./results/`, and the corresponding multi-directional videos will be saved under `./video/`.
+
+  
+## 🎬 Multi-directional Videos from SAM2Point
+We showcase the multi-directional videos generated during the segmentation pf SAM2Point:
+### 3D Object
+
+<table>
+  <tr>
+    <td><img src="./gif/Objaverse_sample0/x.gif" width="200"/></td>
+    <td><img src="./gif/Objaverse_sample0/y.gif" width="200"/></td>
+    <td><img src="./gif/Objaverse_sample0/z.gif" width="200"/></td>
+  </tr>
+</table>
+
+### 3D Indoor Scene
+
+<table>
+  <tr>
+    <td><img src="./gif/S3DIS_sample2/x.gif" width="200"/></td>
+    <td><img src="./gif/S3DIS_sample2/y.gif" width="200"/></td>
+    <td><img src="./gif/S3DIS_sample2/z.gif" width="200"/></td>
+  </tr>
+</table>
+
+### 3D Outdoor Scene
+
+<table>
+  <tr>
+    <td><img src="./gif/Semantic3D_sample0/x.gif" width="200"/></td>
+    <td><img src="./gif/Semantic3D_sample0/y.gif" width="200"/></td>
+    <td><img src="./gif/Semantic3D_sample0/z.gif" width="200"/></td>
+  </tr>
+</table>
+
+### 3D Raw LiDAR
+
+<table>
+  <tr>
+    <td><img src="./gif/KITTI_sample1/x.gif" width="200"/></td>
+    <td><img src="./gif/KITTI_sample1/y.gif" width="200"/></td>
+    <td><img src="./gif/KITTI_sample1/z.gif" width="200"/></td>
+  </tr>
+</table>
 
 ## :white_check_mark: Citation
 
