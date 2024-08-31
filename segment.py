@@ -168,7 +168,7 @@ def seg_point(locs, feats, prompt, args):
     X, Y, Z, _ = grid.shape
     grid = torch.from_numpy(grid)
     
-    name_list = ["./tmp/" + args.dataset, "sample" + str(args.sample_idx), args.prompt_type + "-prompt" + str(args.prompt_idx)]
+    name_list = ["./video/" + args.dataset, "sample" + str(args.sample_idx), args.prompt_type + "-prompt" + str(args.prompt_idx)]
     name = '_'.join(name_list)
     os.makedirs(name + 'frames', exist_ok=True)
     axis0, axis1, axis2 = name + "frames/x", name + "frames/y", name + "frames/z"
@@ -223,7 +223,7 @@ def seg_box(locs, feats, prompt, args):
     X, Y, Z, _ = grid.shape
     grid = torch.from_numpy(grid)
 
-    name_list = ["./tmp/" + args.dataset, "sample" + str(args.sample_idx), args.prompt_type + "-prompt" + str(args.prompt_idx)]
+    name_list = ["./video/" + args.dataset, "sample" + str(args.sample_idx), args.prompt_type + "-prompt" + str(args.prompt_idx)]
     name = '_'.join(name_list)     
     os.makedirs(name + 'frames', exist_ok=True)
     axis0, axis1, axis2 = name + "frames/x", name + "frames/y", name + "frames/z"
@@ -286,7 +286,7 @@ def seg_mask(locs, feats, prompt, args):
     X, Y, Z, _ = grid.shape
     grid = torch.from_numpy(grid)
 
-    name_list = ["./tmp/" + args.dataset, "sample" + str(args.sample_idx), args.prompt_type + "-prompt" + str(args.prompt_idx)]
+    name_list = ["./video/" + args.dataset, "sample" + str(args.sample_idx), args.prompt_type + "-prompt" + str(args.prompt_idx)]
     name = '_'.join(name_list)
     os.makedirs(name + 'frames', exist_ok=True)
     axis0, axis1, axis2 = name + "frames/x", name + "frames/y", name + "frames/z"
