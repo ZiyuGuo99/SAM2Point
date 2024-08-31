@@ -21,7 +21,7 @@ if torch.cuda.get_device_properties(0).major >= 8:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', choices=['S3DIS', 'ScanNet', 'Objaverse', 'KITTI', 'Semantic3D'], default='Objaverse', help='dataset selected')
-    parser.add_argument('--prompt_type', choices=['point', 'box', 'mask'], default='point', help='prompt type selected')
+    parser.add_argument('--prompt_type', choices=['point', 'box'], default='point', help='prompt type selected. Mask prompt will be supported soon...')
     parser.add_argument('--sample_idx', type=int, default=0, help='the index of the scene or object')
     parser.add_argument('--prompt_idx', type=int, default=0, help='the index of the prompt')    
     parser.add_argument('--voxel_size', type=float, default=0.02, help='voxel size')    
@@ -68,10 +68,8 @@ def main():
         box_prompts = np.array(info['box_prompts'])
         prompt_point = None
         prompt_box = list(box_prompts[args.prompt_idx])
-    elif args.prompt_type == 'mask':
-        if 'mask_prompts' not in info:  info['mask_prompts'] = info['point_prompts']
-        mask, prompt_mask = seg_mask(locs, feats, info['mask_prompts'], args)
-        prompt_point, prompt_box = None, None
+    else:
+        print("Wrong prompt type! Please select prompt type from {point, box}. Mask prompt will be released soon. Please be patient. :))")
     
     point_locs = locs[inds_reconstruct]
     point_mask = mask[point_locs[:, 0], point_locs[:, 1], point_locs[:, 2]]
@@ -93,16 +91,6 @@ def main():
         render_scene_outdoor(point, new_color, name, prompt_point=prompt_point, prompt_box=prompt_box, semantic=True, args=args)  
     else:
         render_scene(point, new_color, name, prompt_point=prompt_point, prompt_box=prompt_box)  
-
-    if args.prompt_type == 'mask':
-        point_prompt_mask = prompt_mask[point_locs[:, 0], point_locs[:, 1], point_locs[:, 2]]
-        point_prompt_mask = point_prompt_mask.unsqueeze(-1)
-        point_prompt_mask_not = ~point_prompt_mask
-
-        color_prompt_mask = color * point_prompt_mask_not.numpy() + (color * 0 + np.array([[1., 0., 0.]])) * point_prompt_mask.numpy()
-        name = [args.dataset, "sample" + str(args.sample_idx), args.prompt_type + "-prompt" + str(args.prompt_idx), 'maskprompt']
-        name = '_'.join(name)
-        render_scene(point, color_prompt_mask, name, prompt_point=prompt_point, prompt_box=prompt_box)  
 
 if __name__=='__main__':
     main()
