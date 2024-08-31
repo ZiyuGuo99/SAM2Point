@@ -49,7 +49,7 @@ Create a conda environment:
 
    ```bash
    cd checkpoints
-   ./download_ckpts.sh
+   bash download_ckpts.sh
    cd ..
    ```
 
@@ -64,7 +64,9 @@ We provide 3D data samples from different datasets for testing SAM2Point:
 ***Code for custom 3D input and prompts will be released soon.***
 
 ### Start Segmentation
-Modify `DATASET`, `SAMPLE_IDX`, `PROPMT_TYPE`, `PROMPT_IDX` in `run.sh` to specify the 3D input and prompt, and run the segmentation script:
+Modify `DATASET`, `SAMPLE_IDX`, `PROPMT_TYPE`, `PROMPT_IDX` in `run.sh` to specify the 3D input and prompt.
+
+Run the segmentation script:
    ```bash
    bash run.sh
    ```
@@ -73,7 +75,8 @@ Modify `DATASET`, `SAMPLE_IDX`, `PROPMT_TYPE`, `PROMPT_IDX` in `run.sh` to speci
 
   
 ## 🎬 Multi-directional Videos from SAM2Point
-We showcase the multi-directional videos generated during the segmentation pf SAM2Point:
+
+We showcase the multi-directional videos generated during the segmentation of SAM2Point:
 ### 3D Object
 
 <table>
