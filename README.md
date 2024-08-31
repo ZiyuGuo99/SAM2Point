@@ -20,6 +20,49 @@ To our best knowledge, SAM2POINT presents ***the most faithful implementation of
     <img src="figs/fig2.png" width="90%"> <br>
 </p>
 
+## 🎬 Multi-directional Videos from SAM2Point
+
+We showcase the multi-directional videos generated during the segmentation of SAM2Point:
+### 3D Object
+
+<table>
+  <tr>
+    <td><img src="./gif/Objaverse_sample0/x.gif" width="200"/></td>
+    <td><img src="./gif/Objaverse_sample0/y.gif" width="200"/></td>
+    <td><img src="./gif/Objaverse_sample0/z.gif" width="200"/></td>
+  </tr>
+</table>
+
+### 3D Indoor Scene
+
+<table>
+  <tr>
+    <td><img src="./gif/S3DIS_sample2/x.gif" width="200"/></td>
+    <td><img src="./gif/S3DIS_sample2/y.gif" width="200"/></td>
+    <td><img src="./gif/S3DIS_sample2/z.gif" width="200"/></td>
+  </tr>
+</table>
+
+### 3D Outdoor Scene
+
+<table>
+  <tr>
+    <td><img src="./gif/Semantic3D_sample0/x.gif" width="200"/></td>
+    <td><img src="./gif/Semantic3D_sample0/y.gif" width="200"/></td>
+    <td><img src="./gif/Semantic3D_sample0/z.gif" width="200"/></td>
+  </tr>
+</table>
+
+### 3D Raw LiDAR
+
+<table>
+  <tr>
+    <td><img src="./gif/KITTI_sample1/x.gif" width="200"/></td>
+    <td><img src="./gif/KITTI_sample1/y.gif" width="200"/></td>
+    <td><img src="./gif/KITTI_sample1/z.gif" width="200"/></td>
+  </tr>
+</table>
+
 ## 💪 Get Started
 ### Installation
 
@@ -73,49 +116,6 @@ Run the segmentation script:
 
    The segmentation results will be saved under `./results/`, and the corresponding multi-directional videos will be saved under `./video/`.
 
-  
-## 🎬 Multi-directional Videos from SAM2Point
-
-We showcase the multi-directional videos generated during the segmentation of SAM2Point:
-### 3D Object
-
-<table>
-  <tr>
-    <td><img src="./gif/Objaverse_sample0/x.gif" width="200"/></td>
-    <td><img src="./gif/Objaverse_sample0/y.gif" width="200"/></td>
-    <td><img src="./gif/Objaverse_sample0/z.gif" width="200"/></td>
-  </tr>
-</table>
-
-### 3D Indoor Scene
-
-<table>
-  <tr>
-    <td><img src="./gif/S3DIS_sample2/x.gif" width="200"/></td>
-    <td><img src="./gif/S3DIS_sample2/y.gif" width="200"/></td>
-    <td><img src="./gif/S3DIS_sample2/z.gif" width="200"/></td>
-  </tr>
-</table>
-
-### 3D Outdoor Scene
-
-<table>
-  <tr>
-    <td><img src="./gif/Semantic3D_sample0/x.gif" width="200"/></td>
-    <td><img src="./gif/Semantic3D_sample0/y.gif" width="200"/></td>
-    <td><img src="./gif/Semantic3D_sample0/z.gif" width="200"/></td>
-  </tr>
-</table>
-
-### 3D Raw LiDAR
-
-<table>
-  <tr>
-    <td><img src="./gif/KITTI_sample1/x.gif" width="200"/></td>
-    <td><img src="./gif/KITTI_sample1/y.gif" width="200"/></td>
-    <td><img src="./gif/KITTI_sample1/z.gif" width="200"/></td>
-  </tr>
-</table>
 
 ## :white_check_mark: Citation
 
