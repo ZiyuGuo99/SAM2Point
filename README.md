@@ -2,7 +2,7 @@
 
 Official repository for the project "[SAM2Point: Segment Any 3D as Videos in Zero-shot and Promptable Manners](https://github.com/ZiyuGuo99/SAM2Point/blob/main/SAM2Point.pdf)".
 
-[[🌐 Webpage](https://sam2point.github.io/)] [[🤗 HF Demo](https://huggingface.co/spaces/ZiyuG/SAM2Point)] [[📖 Paper](https://arxiv.org/pdf/2408.16768)] 
+[[🌐 Webpage](https://sam2point.github.io/)] [[🤗 HuggingFace Demo](https://huggingface.co/spaces/ZiyuG/SAM2Point)] [[📖 arXiv Report](https://arxiv.org/pdf/2408.16768)] 
 
 ## 💥 News
 - **[2024.08.30]** We release the [paper](https://arxiv.org/pdf/2408.16768), [demo](https://huggingface.co/spaces/ZiyuG/SAM2Point), and [code](https://github.com/ZiyuGuo99/SAM2Point) of SAM2Point 🚀
@@ -125,7 +125,7 @@ If you find **SAM2Point** useful for your research and applications, please kind
 @article{guo2024sam2point,
   title={SAM2Point: Segment Any 3D as Videos in Zero-shot and Promptable Manners},
   author={Guo, Ziyu and Zhang, Renrui and Zhu, Xiangyang and Tong, Chengzhuo and Gao, Peng and Li, Chunyuan and Heng, Pheng-Ann},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2408.16768},
   year={2024}
 }
 ```
@@ -135,7 +135,7 @@ If you find **SAM2Point** useful for your research and applications, please kind
 Explore our additional research on **3D**, **SAM**, and **Multi-modal Large Language Models**:
 
 - **[Point-Bind & Point-LLM]** [Multi-modality 3D Understanding, Generation, and Instruction Following](https://github.com/ZiyuGuo99/Point-Bind_Point-LLM)
-- **[PerSAM]** [Personalize Segment Anything Model with One Shot](https://github.com/ZrrSkywalker/Personalize-SAM)
+- **[Personalized SAM]** [Personalize Segment Anything Model with One Shot](https://github.com/ZrrSkywalker/Personalize-SAM)
 - **[Point-NN & Point-PN]** [Starting from Non-Parametric Networks for 3D Analysis](https://github.com/ZrrSkywalker/Point-NN)
 - **[PointCLIP]** [3D Point Cloud Understanding by CLIP](https://github.com/ZrrSkywalker/PointCLIP)
 - **[Any2Point]** [Empowering Any-modality Large Models for 3D](https://github.com/Ivan-Tang-3D/Any2Point)
