@@ -119,7 +119,7 @@ Run the segmentation script:
 
 ## :white_check_mark: Citation
 
-If you find **SAM2Point** useful for your research and applications, please kindly cite using this BibTeX:
+If you find **SAM2Point** useful for your research or applications, please kindly cite using this BibTeX:
 
 ```latex
 @article{guo2024sam2point,
