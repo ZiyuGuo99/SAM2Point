@@ -14,7 +14,7 @@ def main():
     parser.add_argument('--sample_idx', type=int, default=0, help='the index of the scene or object')
     parser.add_argument('--prompt_idx', type=int, default=0, help='the index of the prompt')    
     args = parser.parse_args()
-    name_list = ["tmp/" + args.dataset, "sample" + str(args.sample_idx), args.prompt_type + "-prompt" + str(args.prompt_idx)]
+    name_list = ["./video/" + args.dataset, "sample" + str(args.sample_idx), args.prompt_type + "-prompt" + str(args.prompt_idx)]
     name = '_'.join(name_list)
 
     for axis in ['x', 'y', 'z']:
